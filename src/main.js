@@ -275,7 +275,7 @@ class MiniGraphCard extends LitElement {
 
   renderState(entityConfig, id) {
     const isPrimary = id === 0;
-    if (isPrimary || entityConfig.show_state) {
+    if (entityConfig.show_state) {
       const { entity, value: tooltipValue } = this.tooltip;
       const state = this.getEntityState(id);
       return html`
